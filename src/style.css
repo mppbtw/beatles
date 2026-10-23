@@ -14,3 +14,92 @@ canvas {
   left: 0;
   z-index: -9999;
 }
+
+
+.notification {
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  width: 40%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  background-image: url("/john.jpg");
+  background-position-x: -9px;
+  background-position-y: 0px;
+  background-size: 25%;
+  border-color: black;
+  border-width: 15px;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.acceptbutton:hover {
+  background-color: green;
+  cursor: pointer;
+}
+.acceptbutton {
+  background-color: lime;
+  width: 300px;
+  margin-right: 10px
+}
+
+.rejectbutton:hover {
+  background-color: darkred;
+  cursor: pointer;
+}
+.rejectbutton {
+  background-color: red;
+  height: 100%;
+  margin-top: 75px;
+  width: 40px;
+  font-size: 8pt;
+  animation: undulate infinite 1s;
+}
+
+@keyframes undulate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bannertext {
+  font-family: papyrus, fantasy;
+  font-style: bold;
+  font-size: 35pt;
+  color: black;
+}
+
+.banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: right;
+  align-items: center;
+  background-image: linear-gradient(to right, #ff0000,  #8f00ff);
+  height: 50px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+  margin-bottom: 50px;
+  overflow: hidden;
+  text-align: right;
+}
+
+.glitchytext {
+  font-family: monospace;
+  text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 25px #ff0000;
+  font-weight: bold;
+  font-style: italic;
+}
